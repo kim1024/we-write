@@ -39,7 +39,6 @@
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "sharp": "^0.34.5",
     "shiki": "^4.4.1",
     "typescript": "^6.0.3",
     "unified": "^9.2.2",
