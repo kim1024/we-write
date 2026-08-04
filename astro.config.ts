@@ -1,3 +1,4 @@
+import cloudflare from '@astrojs/cloudflare'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig, svgoOptimizer } from 'astro/config'
@@ -39,11 +40,10 @@ export default defineConfig({
 
   // [Adapter]
   // https://docs.astro.build/en/guides/deploy/
-  // adapter: cloudflare(),
-  output: 'static',
-  // Local (standalone)
-  // adapter: node({ mode: 'standalone' }),
-  // output: 'server',
+  adapter: cloudflare({
+    functionPerRoute: false
+  }),
+  output: 'server',
 
   // [Assets]
   image: {
