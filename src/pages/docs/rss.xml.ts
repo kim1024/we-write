@@ -6,9 +6,7 @@ import type { Root } from 'mdast'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const { unified } = require('unified');
+import { unified } from 'unified'
 import { visit } from 'unist-util-visit'
 
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
