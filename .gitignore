@@ -27,6 +27,7 @@ pnpm-debug.log*
 
 # dependencies
 node_modules/
+bun.lock
 
 # environment variables
 .env
