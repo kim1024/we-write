@@ -2,6 +2,7 @@
   "name": "we-write",
   "type": "module",
   "version": "4.1.4",
+  "packageManager": "pnpm@11.18.0",
   "scripts": {
     "dev": "astro dev",
     "dev:check": "astro check --watch & astro dev",
